@@ -1,3 +1,7 @@
+/**
+ *
+ * @author Saad
+ */
 package Project;
 
 public class Gold extends State {
