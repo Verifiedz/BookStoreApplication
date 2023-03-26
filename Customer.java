@@ -64,26 +64,4 @@ public class Customer extends User {
         System.out.println();
         return clist;
     }
-    //testing methods//
-    public static void main(String args[]){
-    Customer s = new Customer();
-    s.SetPassword("abc123");
-    s.SetPassword("myname");
-    s.ChangePassword(s, "abc123", "myname");
-    s.SetUsername("Melvin");
-     s.setPoints(1500);
-     s.setStatus();
-     s.toString();
-     Customer c = new Customer();
-     Customer l = new Customer();
-     l.SetUsername("Roger");
-     l.SetPassword("abc123");
-     l.SetUsername("Saad");
-     l.SetPassword("abc123");
-     l.setPoints(500);
-     s.setStatus();
-    l.toString();
-    
-    }
-    
 }
