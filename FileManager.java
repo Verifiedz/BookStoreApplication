@@ -1,5 +1,5 @@
 
-package project;
+package Project;
 import java.util.*;
 import java.io.*;
 /**
