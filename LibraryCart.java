@@ -50,21 +50,17 @@ import java.io.IOException;
             
     }
         
-    public ArrayList<Book> AddToCart(Book book) throws IOException
+    public ArrayList<Book> AddToCart(Book book)
     {
         //implement javaFX add book button after selecting 
 
         CartBooks.add(book);
-        try (FileWriter writer = new FileWriter("bookFile.txt")) {
-            for (Book line : CartBooks) {
-                writer.write(line + "\n");
-            } 
-        }
+        
         return CartBooks;
         
     }
     
-    public ArrayList<Book> RemovefromCart(Book book) throws IOException
+    public ArrayList<Book> RemovefromCart(Book book)
     {
         // removes selected BOOKS it  the file
         //if(book is selected)
