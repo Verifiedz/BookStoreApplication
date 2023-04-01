@@ -14,7 +14,7 @@ import java.io.IOException;
     public void Checkout(Book book, Customer cust) 
     {
         CustPoints = cust.getPoints();
-        //for(){ // take the books from the file using while loop
+        
             // check if the book is selected using javaFX
                 // if book.(gettermethod for selection javafx).(checking if checkbox is selected)
                         //if it is selected then get the price of the book and add to the subtotal
@@ -70,12 +70,7 @@ import java.io.IOException;
         //if(book is selected)
         // if purhcase or redeem points 
         CartBooks.remove(book);  
-        try ( // write the updated data to the file
-                FileWriter writer = new FileWriter("bookFile.txt")) {
-            for (Book line : CartBooks) {
-                writer.write(line + "\n");
-            } 
-        }
+        
         return CartBooks;
     }
     
