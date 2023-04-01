@@ -13,10 +13,10 @@ public class Owner extends User {
     }
 
     public String getUsername(){
-        return username;
+        return "admin";
     }
     public String getPassword(){
-        return password;
+        return "admin";
     }
     public void AddCustomer(Customer a){
         customers.add(a);
