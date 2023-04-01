@@ -10,6 +10,6 @@ public class Gold extends State {
     }
 
     public void getRank(){
-        System.out.println("Rank:Gold");
+        System.out.println("Gold");
     }
 }
