@@ -9,6 +9,6 @@ public class Silver extends State {
         getRank();
     }
     public void getRank(){
-        System.out.println("Rank:Silver");
+        System.out.println("Silver");
     }
 }
