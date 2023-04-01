@@ -18,7 +18,7 @@ import java.io.IOException;
             // check if the book is selected using javaFX
                 // if book.(gettermethod for selection javafx).(checking if checkbox is selected)
                         //if it is selected then get the price of the book and add to the subtotal
-        
+                        //AddToCart() will be called so it updates the CartBooks Arraylist
         int size = CartBooks.size();
         for(int i=0; i<size; i++){
             totalCartPrice += book.getBookPrice();
