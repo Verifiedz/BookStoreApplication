@@ -61,6 +61,12 @@ public class Customer extends User {
         if(Cpoints>=1000) myState = new Gold();
         else myState = new Silver();
     }
+    
+    //return the state of the customer
+    public State getStatus(){
+        return myState;
+    }
+    
     @Override
     public String toString(){
         String clist ="Username:"+getUsername()+"\n"+"Password:"+getPassword()+"\n"+"Points:"+getPoints();
