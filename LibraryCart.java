@@ -2,9 +2,7 @@ package project;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.IOException;
-import java.io.FileReader;
-import java.io.BufferedReader;
-import java.io.FileWriter;
+
 
     public class LibraryCart {
     private int AmountOfBooks;
@@ -12,26 +10,6 @@ import java.io.FileWriter;
     private int totalCartPrice;
     ArrayList<Book> CartBooks = new ArrayList<>();
     
-    public void BookElements(){
-        //  ONLY selected book elements from files reads to arraylist 
-        //for(Cartbook)
-            // if book.(gettermethod for selection javafx).(checking if checkbox is selected)
-        
-        try {
-            try (FileInputStream fileIn = new FileInputStream("books.txt")) {
-                ObjectInputStream in = new ObjectInputStream(fileIn);
-                while (true) {
-                    try {
-                        Book b = (Book) in.readObject();
-                        CartBooks.add(b);
-                    } catch (EOFException e) {
-                        break;
-                    }
-                }
-                in.close();
-            }
-        } catch (IOException | ClassNotFoundException e) {
-    }
     
     public void Checkout(Book book, Customer cust) 
     {
