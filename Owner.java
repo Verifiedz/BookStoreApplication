@@ -1,22 +1,21 @@
-/**
- *
- * @author Saad
- */
 package Project;
 import java.util.ArrayList;
 public class Owner extends User {
+    
     private ArrayList<Customer> customers; 
-    private Owner instance;
+    private static Owner instance;
 
     private Owner(){
+        super("admin", "admin");
         customers = new ArrayList<Customer>();
     }
+    
 
     public String getUsername(){
-        return "admin";
+        return username;
     }
     public String getPassword(){
-        return "admin";
+        return password;
     }
     public void AddCustomer(Customer a){
         customers.add(a);
@@ -24,7 +23,7 @@ public class Owner extends User {
     public void RemoveCustomer(Customer a){
         customers.remove(a);
     }
-    public Owner getInstance(){
+    public static Owner getInstance(){
         if(instance == null) instance = new Owner();
         return instance; 
     }
@@ -41,5 +40,8 @@ public class Owner extends User {
             }
         }
         return found;
+    }
+    public  ArrayList<Customer> getCustomers(){
+       return customers;
     }
 } 
