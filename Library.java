@@ -1,22 +1,17 @@
-/**
- *
- * @author Abdul Rafae Adil
- */
+
 package Project;
 
 import java.util.ArrayList;
 
 public class Library {
-    private ArrayList<Book> books = new ArrayList<Book>();
-    private Library instance;
-    private String name;
-
-    Library(String name){
-        this.name = name;
+    private static ArrayList<Book> books = new ArrayList<Book>();
+    private static Library instance;
+    Library(){
+        
     }
 
-    public Library getInstance(){
-        if(instance == null) instance = new Library(name);
+    public static Library getInstance(){
+        if(instance == null) instance = new Library();
         return instance;
     }
 
@@ -28,13 +23,8 @@ public class Library {
         books.remove(s);
     }
 
-    public Book getBookItem(){
-        for(Book nm:books){
-            if(nm != null){
-                return nm;
-            }
-        }
-        return null;
-    
+    public  ArrayList<Book> getBookItems(){
+        return books; 
+     
     }
 }
