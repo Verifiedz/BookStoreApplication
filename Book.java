@@ -5,16 +5,27 @@ package Project;
  * @author feroz
  */
 public class Book {
-    
+  
     String name;
-    int price;
+    double price;
+
+    public Book(String name, double price){
+        this.name =name;
+        this.price = price; 
+    }
     
     public String getBookName() {
         return name;
     }
 
-    public int getBookPrice() {
+    public double getBookPrice() {
         return price;
+    }
+    @Override
+    public String toString(){
+        String list;
+        list = getBookName()+","+getBookPrice()+"\n";
+        return list;
     }
     
 }
