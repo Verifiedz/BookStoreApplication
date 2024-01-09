@@ -9,6 +9,8 @@ This project is a collaborative effort showcasing our skills in software enginee
 - **User and Admin Login:** The application provides a secure login system for both users and administrators, ensuring controlled access to different functionalities.
 
 - **Book Purchasing Options:** Users can browse through the bookstore, selecting and purchasing books using various payment methods, including cash, points, or a combination of both.
+  
+- **User Rank Discounts:** Depending on the user's rank, discounts are applied. Gold users receive a larger discount compared to Silver users. Users with no rank are not eligible for any discount.
 
 - **Admin Controls:** Administrators have the capability to manage users and books in the system. This includes adding new users, editing user details, adding, editing, or removing books from the inventory.
 
