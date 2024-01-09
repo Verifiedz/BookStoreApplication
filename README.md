@@ -2,6 +2,10 @@
 
 This project is a collaborative effort showcasing our skills in software engineering, problem-solving, and programming. We developed a Virtual Bookstore Application using Java and JavaFX, implementing various software development practices and incorporating essential design patterns such as Singleton, State, Observer, and more.
 
+## Disclaimer
+
+**These programs are intended for DEMONSTRATION purposes ONLY and SHOULD NOT be employed for academic evaluations. It is important to note that I DISCLAIM ANY RESPONSIBILITIES for any ACADEMIC MISCONDUCT allegations that may arise from their use in such contexts.**
+
 ## Project Overview
 
 ### Features
@@ -29,7 +33,3 @@ This project is a collaborative effort showcasing our skills in software enginee
 ## Contribution Guidelines
 
 We welcome contributions and improvements to this project. If you have any ideas or find issues, feel free to open an issue or submit a pull request.
-
-## Disclaimer
-
-**These programs are intended for DEMONSTRATION purposes ONLY and SHOULD NOT be employed for academic evaluations. It is important to note that I DISCLAIM ANY RESPONSIBILITIES for any ACADEMIC MISCONDUCT allegations that may arise from their use in such contexts.**
